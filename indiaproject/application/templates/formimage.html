@@ -1,0 +1,105 @@
+{% extends "indiaproject/templates/main.html" %}
+{% block formimage %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formimage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body, html {
+			height: 100%;
+			font-family: arial, helventica, sans-serif;
+		}
+		* {
+			box-sizing: border-box;
+		}
+		.bg-img {
+			background-image: url("#");
+			min-height: 380px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+		.container {
+			position: absolute;
+			right: 0;
+			margin: 20px;
+			max-width: 300px;
+			padding: 16px;
+			background-color: black;
+		}
+		input[type=text]:focus, input[type=password]:focus {
+			background-color: #ddd;
+			outline: none;
+		}
+		.btn {
+			background-color: blue;
+			color: white;
+			padding: 16px 20px;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			opacity: 0.9;
+		}
+		.btn:hover {
+			opacity: 1;
+		}
+		.bg-img1 {
+			background-image: url("#");
+			min-height: 380px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+		.container {
+			position: absolute;
+			right: 0;
+			margin: 20px;
+			max-width: 300px;
+			padding: 16px;
+			background-color: black;
+		}
+		.btn {
+			background-color: blue;
+			color: white;
+			padding: 16px 20px;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			opacity: 0.9;
+		}
+		.btn:hover {
+			opacity: 2;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="bg-img">
+		<form class="container">
+			<h1>Login</h1>
+			<label for="email"><b>EmailId</b></label>
+			<input type="text" name="email" placeholder="Enter EmailId" required>
+
+			<label for="psw"><b>Password</b></label>
+			<input type="password" name="psw" placeholder="Enter Password" required>
+
+			<button type="submit" class="btn">Login</button>
+			
+		</form>
+		
+	</div>
+	<div class="bg-img1">
+		<form class="container">
+			<button type="leran more" class="btn" href="#">Learn More</button>
+			
+		</form>
+		
+	</div>
+
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends "indiaproject/templates/main.html" %}
+{% block footage %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		* {
+			background-color: black;
+		}
+		.pull-left {
+			position: fixed;
+			left: 0;
+			text-align: left;
+
+		}
+
+		.fa {
+			padding: 10px;
+			font-size: 30px;
+			width: 30px;
+			text-align: center;
+			text-decoration: none;
+			margin: 5px 2px;
+			border-radius: 50;
+		}
+		.fa:hover {
+			opacity: 0.9;
+		}
+		.fa-facebook {
+			background: #3B5998;
+			color: white;
+			border-radius: 5;
+		}
+		.fa-twitter {
+			background: #55ACEE;
+			color: white;
+
+		}
+		.fa-youtube {
+			background-color: #bb0000;
+			color: white;
+		}
+		.fa-instagram {
+			background-color: #125688;
+			color: white;
+		}
+		.pull-right {
+			position: fixed;
+			right: 0;
+			text-align: right;
+		}
+		.pull-left {
+			position: fixed;
+			left: 0;
+			text-align: left;
+		}
+		.footer {
+			position: fixed;
+			left: 0;
+			width: 100%;
+			background-color: black;
+		}
+		.pull-right {
+			position: fixed;
+			right: 0;
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="heading pull-left" id="connect-social">Stay Connected</div>
+		<a href="https://www.facebook.com/" title="Facebook" class="fa fa-facebook">FACEBOOK</a>
+		<a href="https://twitter.com/" title="Twitter" class="fa fa-twitter">TWITTER</a>
+		<a href="https://www.youtube.com/" title="Youtube" class="fa fa-youtube">YOUTUBE</a>
+		<a href="https://www.instagram.com/" title="Instagram" class="fa fa-instagram">INSTAGRAM</a>
+		<div class="heading pull-right" id="connect-social">Get the Indian Restuarent App</div>
+	</div>
+	<div>
+		<a href="#" class="heading pull-left">CONTACT | PRIVACY(UPDATED) | TERMS & CONDITIONS | ACCESSIBILITY</a>
+		<div class="footer">
+			<p>Footer</p>
+		</div>
+		<a href="#" class="heading pull-right"> @2018-2019 Indian Restuarent. All Rights Reserved</a>
+	</div>
+
+
+</body>
+</html>
+{% endblock %}
